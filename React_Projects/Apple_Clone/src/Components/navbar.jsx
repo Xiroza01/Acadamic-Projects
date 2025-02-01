@@ -1,4 +1,6 @@
 import React from "react";
+import "../index.css";
+
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -37,7 +39,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="store">
                 Store
               </Link>
             </li>

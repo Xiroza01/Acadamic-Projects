@@ -3,7 +3,7 @@ import React from "react";
 function FooterPage() {
   return (
     <div>
-      <footer className="footer bg-black text-white">
+      <footer className="footer bg-dark text-white">
         <div className="row p-3 mx-5">
           <div className="col-md-3 col-lg-3 col-sm-12 col-12">
             <h3 className="fw-bold">Shop and Learn</h3>
@@ -151,9 +151,16 @@ function FooterPage() {
         </div>
         <hr className="w-100" />
         <div className="container text-center py-3">
-          <p className="mb-0">
+          <p className="mb-2">
             © {new Date().getFullYear()} Your Company Name. All rights reserved.
           </p>
+          <div className="d-flex justify-content-center align-items-center gap-3">
+            <p className="m-0">Privacy Policy</p>
+            <p className="m-0 border-start ps-3">Terms of Use</p>
+            <p className="m-0 border-start ps-3">Sales Policy</p>
+            <p className="m-0 border-start ps-3">Legal</p>
+            <p className="m-0 border-start ps-3">Site Maps</p>
+          </div>
         </div>
       </footer>
     </div>
