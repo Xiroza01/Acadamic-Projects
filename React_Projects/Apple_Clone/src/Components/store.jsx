@@ -189,6 +189,47 @@ const accessories = [
     Prise: "MRP ₹14500.00 (Incl. of all taxes)",
   },
 ];
+const personalisation = [
+  {
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-valentines-engraving-202501?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1734624551582",
+  },
+  {
+    name: "Apple Store",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-4-anc-select-202409?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1725502639798",
+    text: "AirPods 4 with Active Noise Cancellation",
+    Prise: "MRP ₹17900.00 (Incl. of all taxes)",
+  },
+  {
+    name: "Apple Store",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1724041669458",
+    text: "AirPods Pro 2",
+    Prise: "MRP ₹24900.00 (Incl. of all taxes)",
+  },
+  {
+    name: "Apple Store",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airtag-single-select-202104?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1617761671000",
+    text: "AirTag)",
+    Prise: "MRP ₹3490.00 (Incl. of all taxes",
+  },
+  {
+    name: "Apple Store",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MX2D3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1713841707336",
+    text: "Apple Pencil Pro",
+    Prise: "MRP ₹11900.00 (Incl. of all taxes)",
+  },
+  {
+    name: "Apple Store",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airtag-4pack-select-202104?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1617761669000",
+    text: "AirTag 4 pack",
+    Prise: "MRP ₹11900.00 (Incl. of all taxes)",
+  },
+  {
+    name: "Apple Store",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MU8F2?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1540596407165",
+    text: "Apple Pencil (2nd Generation)",
+    Prise: "MRP ₹11900.00 (Incl. of all taxes)",
+  },
+];
 
 const AppleStore = () => {
   return (
@@ -271,7 +312,7 @@ const AppleStore = () => {
 
       <div className="appleStore d-flex justify-content-between mt-5 gap-5">
         {appleStore.map((appleStore, index) => (
-          <div className="card mb-5 position-relative" key={index}>
+          <div className="card mb-5 border-0 shadow-lg" key={index}>
             <img
               src={appleStore.img}
               className="card-img"
@@ -300,7 +341,10 @@ const AppleStore = () => {
 
       <div className="appleStore d-flex justify-content-between mt-5 gap-5">
         {accessories.map((accessories, index) => (
-          <div className="card mb-5 position-relative" key={index}>
+          <div
+            className="card mb-5 position-relative shadow-lg border-0"
+            key={index}
+          >
             <img
               src={accessories.img}
               className="card-img"
@@ -314,6 +358,49 @@ const AppleStore = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="col col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+        <h1>
+          <span className="text-danger">Personalisation.</span>{" "}
+          <span
+            className="text-secondary"
+            style={{ color: "#6c757d !important" }}
+          >
+            A Valentine’s gift just for them.
+          </span>
+        </h1>
+      </div>
+
+      <div className="appleStore d-flex justify-content-between mt-5 gap-5">
+        {personalisation.map((personalisation, index) => (
+          <div
+            className="card mb-5 position-relative shadow-lg border-0"
+            key={index}
+          >
+            <img
+              src={personalisation.img}
+              className="card-img"
+              alt={personalisation.name}
+            />
+            <div className="position-absolute bottom-0 p-3">
+              <p>
+                <h5 className="">{personalisation.text}</h5>
+                <p>{personalisation.Prise}</p>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="col col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+        <h1>
+          <span className="text-danger"> The Apple Store difference.</span>{" "}
+          <span
+            className="text-secondary"
+            style={{ color: "#6c757d !important" }}
+          >
+            So many reasons to love.
+          </span>
+        </h1>
       </div>
     </div>
   );
