@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-black text-light fixed-top py-2">
       <div className="container-fluid">
-        <Link className="navbar-brand text-light ms-4" to="/">
+        <Link className="navbar-brand text-light ms-4" to="HomePage">
           <img
             src="https://img.icons8.com/m_rounded/512/FFFFFF/mac-os.png"
             alt="logo"
@@ -34,7 +34,7 @@ function Navbar() {
         >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item mx-2">
-              <Link className="nav-link active text-light" to="/">
+              <Link className="nav-link active text-light" to="HomePage">
                 Home
               </Link>
             </li>
@@ -81,6 +81,11 @@ function Navbar() {
             <li className="nav-item mx-2">
               <Link className="nav-link text-light" to="#">
                 Accessories
+              </Link>
+            </li>
+            <li className="nav-item mx-2">
+              <Link className="nav-link text-light" to="HomePage">
+                Apple Profile
               </Link>
             </li>
           </ul>

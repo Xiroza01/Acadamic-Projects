@@ -230,6 +230,47 @@ const personalisation = [
     Prise: "MRP ₹11900.00 (Incl. of all taxes)",
   },
 ];
+const difference = [
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-credit-card-fill"
+        viewBox="0 0 16 16"
+        color="black"
+      >
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1" />
+      </svg>
+    ),
+    text: "Free Shipping",
+  },
+];
+const help = [
+  {
+    name: "APPLE STORE APP",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-specialist-help-202309?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1701194078821",
+    text: "Discover a new way to shop..",
+    title: "APPLE STORE APP",
+  },
+  {
+    name: "Explore recommendations customised for you.",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-business-202409_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1724793636957",
+    title: "PERSONALISATION",
+  },
+  {
+    name: "Browse. Save. Pick up where you left off.",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1697149577145",
+    title: "SEAMLESS SHOPING",
+  },
+  {
+    name: "Learn how to get more from your devices.",
+    img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-personal-setup-202408?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1727714996748",
+    title: "GO FURTHER",
+  },
+];
 
 const AppleStore = () => {
   return (
@@ -239,6 +280,11 @@ const AppleStore = () => {
         12 months of No Cost EMI.§{" "}
         <span className="text-primary">See offers</span>
       </p>
+      <img
+        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/vday-store-seasonalbanner-202501?wid=3840&hei=400&fmt=png-alpha&.v=1737999438042"
+        alt=""
+        style={{ width: "100%" }}
+      />
       <div className="row">
         <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
           <h1>
@@ -401,6 +447,48 @@ const AppleStore = () => {
             So many reasons to love.
           </span>
         </h1>
+      </div>
+      <div className="appleStore d-flex justify-content-between mt-5 gap-5 mb-5">
+        {difference.map((difference, index) => (
+          <div
+            className="card mb-5 position-relative shadow-lg border-0"
+            key={index}
+          >
+            <i class="bi bi-credit-card-fill"></i>
+            <div className="card position-absolute top-0 text-light">
+              <p className="text-dark p-3">
+                <h5>{difference.text}</h5>
+              </p>
+            </div>
+            <div className="position-absolute bottom-0 p-3"></div>
+          </div>
+        ))}
+      </div>
+
+      <div className="col col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+        <h1>
+          <span className="text-danger">Help is here.</span>{" "}
+          <span
+            className="text-secondary"
+            style={{ color: "#6c757d !important" }}
+          >
+            Whenever and however you need it.
+          </span>
+        </h1>
+      </div>
+
+      <div className="appleStore d-flex justify-content-between mt-5 gap-5">
+        {help.map((help, index) => (
+          <div className="card mb-5 border-0 shadow-lg" key={index}>
+            <img src={help.img} className="card-img" alt={help.name} />
+            <div className="position-absolute top-0 p-3">
+              <p>
+                <span className="text-primary">{help.title}</span>
+                <h4>{help.name}</h4>
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

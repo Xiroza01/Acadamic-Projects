@@ -1,21 +1,31 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Components/navbar";
 import HomePage from "./Components/HomePage";
 import "./index.css";
 import FooterPage from "./Components/footer";
 import AppleStore from "./Components/store";
+import ChatBot from "./Pages/ChatBot";
 
 function App() {
   return (
+    <BrowserRouter>
+      <MainApp />
+    </BrowserRouter>
+  );
+}
+
+function MainApp() {
+  const location = useLocation();
+
+  return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="store" element={<AppleStore />} />
-        </Routes>
-        <FooterPage />
-      </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<ChatBot />} />
+        <Route path="HomePage" element={<HomePage />} />
+        <Route path="store" element={<AppleStore />} />
+      </Routes>
+      {location.pathname !== "/" && <FooterPage />}
     </div>
   );
 }
