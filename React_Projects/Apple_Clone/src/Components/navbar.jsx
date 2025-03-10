@@ -44,48 +44,43 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="mac">
                 Mac
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="iPad">
                 iPad
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="iPhone">
                 iPhone
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="watch">
                 Watch
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="airPods">
                 AirPods
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="home&tv">
                 TV & Home
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="entertainment">
                 Entertainment
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="#">
+              <Link className="nav-link text-light" to="Accessories">
                 Accessories
-              </Link>
-            </li>
-            <li className="nav-item mx-2">
-              <Link className="nav-link text-light" to="HomePage">
-                Apple Profile
               </Link>
             </li>
           </ul>

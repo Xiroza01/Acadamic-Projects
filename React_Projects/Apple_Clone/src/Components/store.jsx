@@ -334,8 +334,17 @@ const AppleStore = () => {
               className="card-img-top mb-5"
               alt={latestAccesseries.name}
             />
+
             <div className="position-absolute top-0 text-light">
-              <p className="">
+              <p
+                className=""
+                style={{
+                  color:
+                    index === 1 || index === 3 || index === 6
+                      ? "black"
+                      : "white",
+                }}
+              >
                 <h1 className="p-2">{latestAccesseries.name}</h1>
                 <span className="p-2">{latestAccesseries.text}</span>
                 <span>{latestAccesseries.price}</span>

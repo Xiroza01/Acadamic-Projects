@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import videoSrc from "../Videos/AiAnimation.mp4"; // Import if inside src
+import videoSrc from "../Videos/AiAnimation.mp4";
 
 function ChatBot() {
   return (
     <div>
-      <div className="container-fluid w-100 position-fixed top-0 bg-light">
-        <div className="center-text">Welcome to our Chatbot</div>
+      <div className="container-fluid w-100 position-fixed top-0 bg-light d-flex justify-content-between align-items-center px-3 py-2 shadow">
+        <div className="center-text fs-5 fw-bold">Welcome to our Chatbot</div>
+        <Link to="HomePage">
+          <button className="btn btn-dark text-white">Apple Profile</button>
+        </Link>
       </div>
 
       <div
