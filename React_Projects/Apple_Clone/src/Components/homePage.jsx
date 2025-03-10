@@ -15,7 +15,7 @@ function HomePage() {
         src={iphone16Pro1}
         alt="iPhone 16 Pro"
         style={{
-          height: "50vh",
+          height: "70vh",
           width: "100%",
         }}
       />
@@ -25,7 +25,7 @@ function HomePage() {
         src={iphone16Pro}
         alt="iPhone 16 Pro Blue"
         style={{
-          height: "50vh",
+          height: "70vh",
           width: "100%",
         }}
       />
@@ -42,7 +42,7 @@ function HomePage() {
         src={AppleWatchAds}
         alt="iPhone 16 Pro Blue"
         style={{
-          height: "50vh",
+          height: "70vh",
           width: "100%",
         }}
       />

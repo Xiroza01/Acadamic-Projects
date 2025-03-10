@@ -18,5 +18,21 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener('scroll', function() {
+        let hero = document.getElementById('hero');
+        let video = hero.querySelector("video");
+        let scrollTop = window.scrollY;
+  
+        // Shrink video and add padding with smooth transition
+        if (scrollTop > 100) {
+          hero.classList.add("shrink");
+          video.style.transform = "scale(0.8)";
+        } else {
+          hero.classList.remove("shrink");
+          video.style.transform = "scale(1)";
+        }
+      });
+    </script>
   </body>
 </html>

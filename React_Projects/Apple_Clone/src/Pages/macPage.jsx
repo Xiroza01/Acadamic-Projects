@@ -92,6 +92,8 @@ function MacProducts() {
               src={latestAccessery.img}
               className="card-img-top mb-5"
               alt={latestAccessery.name}
+              style={{ height: "650px", objectFit: "cover" }}
+
             />
             <div
               className="position-absolute top-0"
