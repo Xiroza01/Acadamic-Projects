@@ -26,10 +26,10 @@
   
         // Shrink video and add padding with smooth transition
         if (scrollTop > 100) {
-          hero.classList.add("shrink");
+          hero.classNameList.add("shrink");
           video.style.transform = "scale(0.8)";
         } else {
-          hero.classList.remove("shrink");
+          hero.classNameList.remove("shrink");
           video.style.transform = "scale(1)";
         }
       });

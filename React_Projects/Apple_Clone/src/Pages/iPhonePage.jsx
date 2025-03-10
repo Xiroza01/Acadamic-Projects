@@ -1,17 +1,17 @@
-import React from "react";
+
 import VideoSrc from "../Videos/iPhoneVideo.mp4";
 import IPhoneADV from "../../public/IphoneADV.png";
 
 function IPhonePage() {
   const latestAccessories = [
     {
-      name: "AirPods Pro",
+      name: "iPhone",
       img: "https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-geo-240909-lp.jpg.news_app_ed.jpg",
       price: "From ₹119900.00",
       text: "iPhone 16 Pro Built for Apple Intelligence. Footnote",
     },
     {
-      name: "AirPods Pro",
+      name: "iPhone Pro",
       img: "https://thumbs.dreamstime.com/b/fierce-majestic-orange-black-striped-tiger-wallpaper-generated-ai-fierce-majestic-orange-black-striped-tiger-352258722.jpg",
       price: "From ₹119900.00",
       text: "iPhone 16 Pro Built for Apple Intelligence. Footnote",
@@ -23,16 +23,14 @@ function IPhonePage() {
       text: "iPhone 16 Pro Built for Apple Intelligence. Footnote",
     },
     {
-      name: "AirPods Pro",
+      name: "iPhone",
       img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-macbook-pro-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728342374593",
       price: "From ₹119900.00",
       text: "iPhone 16 Pro Built for Apple Intelligence. Footnote",
     },
     {
-      name: "AirPods Pro",
+      name: "",
       img: "https://image.winudf.com/v2/image1/Y29tLml3YWxscGFwZXIud2FsbHBhcGVyZm9yaXBob25lLmlwaG9uZXdhbGxwYXBlcnNfc2NyZWVuXzJfMTY2NDc5NzczNV8wMDc/screen-2.jpg?fakeurl=1&type=.jpg",
-      price: "From ₹119900.00",
-      text: "iPhone 16 Pro Built for Apple Intelligence. Footnote",
     },
     {
       name: "AirPods Pro",
@@ -98,7 +96,7 @@ function IPhonePage() {
           </div>
         ))}
       </div>
-      <h1 class="p-5 mt-5" style={{ fontSize: "4rem" }}>
+      <h1 className="p-5 mt-5" style={{ fontSize: "4rem" }}>
         Explore the line-up.
       </h1>
       <div className="p-5">
@@ -116,16 +114,16 @@ function IPhonePage() {
                 <p className="card-text text-center mt-3">
                   M4, M4 Pro or M4 Max chip
                 </p>
-                <p class="card-text text-center mt-3">
+                <p className="card-text text-center mt-3">
                   The most advanced Mac laptops for demanding workflows.
                 </p>
-                <p class="card-text text-center">
+                <p className="card-text text-center">
                   <strong>From ₹169900.00*</strong>
                 </p>
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Buy
                 </a>
               </div>
@@ -149,10 +147,10 @@ function IPhonePage() {
                 <p className="card-text text-center">
                   <strong>From ₹99900.00*</strong>
                 </p>
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   But
                 </a>
               </div>
@@ -177,10 +175,10 @@ function IPhonePage() {
                 <p className="card-text text-center">
                   <strong>From ₹169900.00*</strong>
                 </p>
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Buy
                 </a>
               </div>
@@ -201,16 +199,16 @@ function IPhonePage() {
                 <p className="card-text text-center mt-3">
                   M4, M4 Pro or M4 Max chip
                 </p>
-                <p class="card-text text-center mt-3">
+                <p className="card-text text-center mt-3">
                   The most advanced Mac laptops for demanding workflows.
                 </p>
-                <p class="card-text text-center">
+                <p className="card-text text-center">
                   <strong>From ₹169900.00*</strong>
                 </p>
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Buy
                 </a>
               </div>
@@ -234,10 +232,10 @@ function IPhonePage() {
                 <p className="card-text text-center">
                   <strong>From ₹99900.00*</strong>
                 </p>
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   But
                 </a>
               </div>
@@ -262,10 +260,10 @@ function IPhonePage() {
                 <p className="card-text text-center">
                   <strong>From ₹169900.00*</strong>
                 </p>
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Buy
                 </a>
               </div>

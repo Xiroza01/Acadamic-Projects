@@ -124,10 +124,10 @@ function IPadPage() {
                 <p className="card-text text-center">
                   <strong>From ₹169900.00*</strong>
                 </p>
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Buy{" "}
                 </a>
               </div>
@@ -183,7 +183,7 @@ function IPadPage() {
                 <a href="#" className="btn btn-primary mt-3">
                   Learn More
                 </a>{" "}
-                <a href="#" class="btn btn-primary mt-3">
+                <a href="#" className="btn btn-primary mt-3">
                   Buy{" "}
                 </a>
               </div>

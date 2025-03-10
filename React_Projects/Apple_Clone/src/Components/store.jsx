@@ -238,7 +238,7 @@ const difference = [
         width="16"
         height="16"
         fill="currentColor"
-        class="bi bi-credit-card-fill"
+        className="bi bi-credit-card-fill"
         viewBox="0 0 16 16"
         color="black"
       >
@@ -463,7 +463,7 @@ const AppleStore = () => {
             className="card mb-5 position-relative shadow-lg border-0"
             key={index}
           >
-            <i class="bi bi-credit-card-fill"></i>
+            <i className="bi bi-credit-card-fill"></i>
             <div className="card position-absolute top-0 text-light">
               <p className="text-dark p-3">
                 <h5>{difference.text}</h5>

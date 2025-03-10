@@ -108,7 +108,7 @@ function MacProducts() {
           </div>
         ))}
       </div>
-      <h1 class="p-5 mt-5" style={{ fontSize: "4rem" }}>
+      <h1 className="p-5 mt-5" style={{ fontSize: "4rem" }}>
         Explore the line-up.
       </h1>
       <div className="row p-5">
@@ -116,7 +116,7 @@ function MacProducts() {
           <div className="card p-5">
             <img
               src="https://www.apple.com/v/mac/home/cb/images/overview/select/product_tile_mbp_14_16__bkl8zusnkpw2_large.png"
-              class="card-img-top"
+              className="card-img-top"
               alt="Laptop Image"
             />
             <div classNames="card-body">
@@ -143,7 +143,7 @@ function MacProducts() {
           <div className="card p-5">
             <img
               src="https://www.apple.com/v/mac/home/cb/images/overview/select/product_tile_mba_13_15__fx2g3qlubdym_large.png"
-              class="card-img-top"
+              className="card-img-top"
               alt="Laptop Image"
             />
             <div className="card-body">
@@ -256,7 +256,7 @@ function MacProducts() {
                 </h2>
                 <div
                   id="collapseOne"
-                  class="accordion-collapse collapse show"
+                  className="accordion-collapse collapse show"
                   aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample"
                 >
@@ -274,7 +274,7 @@ function MacProducts() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingTwo">
                   <button
-                    class="accordion-button collapsed"
+                    className="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
@@ -290,7 +290,7 @@ function MacProducts() {
                   aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
+                  <div className="accordion-body">
                     Sketch on your iPad and have it appear instantly on your
                     Mac. Or use your iPad as a second display, so you can work
                     on one screen while you reference the other. You can even
@@ -326,7 +326,7 @@ function MacProducts() {
               </div>
             </div>
           </div>
-          <div class="col col-lg-6 col-md-6 col-12">
+          <div className="col col-lg-6 col-md-6 col-12">
             <img
               alt=""
               src="https://images.reiboot.com/article/ios18/comprehensive-writing-tools-for-enhanced-text-processing.jpg?w=559&h=363"
